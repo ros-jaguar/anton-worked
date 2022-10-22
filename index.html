@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+  <h1 id="title">Short survey about using your Iphone</h1>
+  <p id="description">We would like to ask a few questions about you and your experience of using Iphone</p>
+</header>
+<div class="form">
+  <form id="survey-form">
+    
+    <div class="form-section">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" name="name" class="form-item" placeholder="Please, enter your name" required>
+    </div>
+     <div class="form-section">
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" name="email" class="form-item" placeholder="Please, enter your email" required>
+    </div>
+     <div class="form-section">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="10" max="101" name="number" class="form-item" placeholder="Please, enter your age">
+    </div>
+    
+    <div class="form-section">
+      <p>Which Iphone do you use?</p>
+      <select id="dropdown" name="model" class="form-item" required>
+        <option disabled selected value>Select your current model</option>
+        <option value="iphone13promax">Iphone 13 Pro Max</option>
+        <option value="iphone13pro">Iphone 13 Pro</option>
+        <option value="iphone13">Iphone 13</option>
+        <option value="iphone13mini">Iphone 13 Mini</option>
+        <option value="iphonese2022">Iphone SE (2022)</option>
+        <option value="iphone12promax">Iphone 12 Pro Max</option>
+        <option value="iphone12pro">Iphone 12 Pro</option>
+        <option value="iphone12">Iphone 12</option>
+        <option value="iphone12mini">Iphone 12 Mini</option>
+        <option value="iphone11">Iphone 11</option>
+        <option value="older">I use older model</option>
+      </select>
+    </div>
+    
+    <div class="form-section">
+      <p>How many percent are you satisfied with the experience of using your Iphone?</p>
+      <label>
+        <input
+               name="experience"
+               value="100%"
+               type="radio"
+               class="radio-input"
+               checked/>100%
+      </label>
+       <label>
+        <input
+               name="experience"
+               value="75%"
+               type="radio"
+               class="radio-input"
+               />75%
+      </label>
+      <label>
+        <input
+               name="experience"
+               value="50%"
+               type="radio"
+               class="radio-input"
+               />50%
+      </label>
+      <label>
+        <input
+               name="experience"
+               value="25%"
+               type="radio"
+               class="radio-input"
+               />25%
+      </label>
+      <label>
+        <input
+               name="experience"
+               value="0%"
+               type="radio"
+               class="radio-input"
+               />0%
+      </label>
+    </div>
+    
+    <div class="form-section">
+      <p>In your opinion, what is the main advantage<span class="addtext">(Multiple choise)</span></p>
+      <label>
+        <input
+               name="advantage"
+               value="camera"
+               type="checkbox"
+               class="check-input"
+               />Camera
+      </label>
+       <label>
+        <input
+               name="advantage"
+               value="ecosystem"
+               type="checkbox"
+               class="check-input"
+               />Apple ecosystem
+      </label>
+      <label>
+        <input
+               name="advantage"
+               value="apps"
+               type="checkbox"
+               class="check-input"
+               />Unique applications
+      </label>
+      <label>
+        <input
+               name="advantage"
+               value="stability"
+               type="checkbox"
+               class="check-input"
+               />Stability
+      </label>
+      <label>
+        <input
+               name="advantage"
+               value="ui"
+               type="checkbox"
+               class="check-input"
+               />User interface
+      </label>
+      <label>
+        <input
+               name="advantage"
+               value="services"
+               type="checkbox"
+               class="check-input"
+               />Apple services
+      </label>
+    </div>
+    
+    <div class="form-section">
+      <p>Describe your own experience with your Iphone</p>
+      <textarea
+                id="comment"
+                class="text-input"
+                name="comment"
+                placeholder="Enter here some sentences."
+                ></textarea>
+    </div>
+    
+    <div class="form-section">
+      <button id="submit" class="submit-button">Submit</submit>
+    </div>
+  </form>
+</div>
+</body>
+</html>
